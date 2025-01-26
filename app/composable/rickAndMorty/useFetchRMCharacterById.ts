@@ -34,10 +34,18 @@ export default async (id: string): Promise<{
   watchEffect(() => {
     if (error.value) {
       consola.error(`[Rick and Morty Id Composable] Failed to fetch data for character ID ${id}.`, error.value)
+      throw createError({
+        statusCode: 404,
+        statusMessage: `No data found for character ID ${id}.`,
+      })
     }
 
     if (!data?.value?.id) {
       consola.error(`[Rick and Morty Id Composable] Failed to fetch data for character ID ${id}.`)
+      throw createError({
+        statusCode: 404,
+        statusMessage: `No data found for character ID ${id}.`,
+      })
     }
   })
 

@@ -48,10 +48,18 @@ export default async (): Promise<{
   watchEffect(() => {
     if (error.value) {
       consola.error(`[Rick and Morty Page Composable] Failed to fetch data for page ${page.value}.`, error.value)
+      throw createError({
+        statusCode: 404,
+        statusMessage: `No data found for page ${page.value}.`,
+      })
     }
 
     if (!data.value?.results?.length) {
       consola.error(`[Rick and Morty Page Composable] No characters found for page ${page.value}.`)
+      throw createError({
+        statusCode: 404,
+        statusMessage: `No characters found for page ${page.value}.`,
+      })
     }
   })
 
