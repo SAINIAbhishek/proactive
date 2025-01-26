@@ -59,6 +59,9 @@ importers:
       pinia:
         specifier: ^2.3.0
         version: 2.3.0(typescript@5.7.3)(vue@3.5.13(typescript@5.7.3))
+      rickmortyapi:
+        specifier: ^2.3.0
+        version: 2.3.0
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
@@ -5196,6 +5199,10 @@ packages:
 
   rfdc@1.4.1:
     resolution: {integrity: sha512-q1b3N5QkRUWUl7iyylaaj3kOpIT0N2i9MqIEQXP73GVsN9cw3fdx8X63cEmWhJGi2PPCF23Ijp7ktmd39rawIA==}
+
+  rickmortyapi@2.3.0:
+    resolution: {integrity: sha512-YSAwmxS1OFRO1gYzxyZpijGXXJ5z1yDGT8U5kYqP5Qc4T3uWWQyQk8L7ty6R0HigIrGIXzht6xBpmshGhqn5sg==}
+    engines: {node: '>= 18'}
 
   rimraf@5.0.10:
     resolution: {integrity: sha512-l0OE8wL34P4nJH/H2ffoaniAokM2qSmrtXHmlpvYr5AVVX8msAyW0l8NVJFDxlSK4u3Uh/f41cQheDVdnYijwQ==}
@@ -13066,6 +13073,8 @@ snapshots:
   reusify@1.0.4: {}
 
   rfdc@1.4.1: {}
+
+  rickmortyapi@2.3.0: {}
 
   rimraf@5.0.10:
     dependencies:
