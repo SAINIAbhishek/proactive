@@ -6,7 +6,7 @@ import { defaultPageNumber } from '~/constants'
 /**
  * Store for managing Rick and Morty character data.
  */
-export const useRickAndMorty = defineStore('rick-and-morty', {
+export const useRickAndMortyStore = defineStore('rick-and-morty', {
   state: (): RickAndMortyState => ({
     characterById: new Map<number, Character>(),
     charactersByPage: new Map<number, Character[]>(),
