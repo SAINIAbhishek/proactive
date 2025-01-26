@@ -1,3 +1,7 @@
 <template>
-  <p>Rick and Morty page</p>
+  <section class="py-8">
+    <UContainer>
+      <OverviewHeader title="Rick and Morty Character" />
+    </UContainer>
+  </section>
 </template>
