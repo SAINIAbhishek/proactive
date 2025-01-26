@@ -1,7 +1,7 @@
 import type { AsyncDataRequestStatus } from '#app'
 import type { Character, Info } from 'rickmortyapi'
 import { consola } from 'consola'
-import { defaultPageNumber } from '~/constants'
+import { validatePageQueryParam } from '~/helpers/validatePageParams'
 import { useRickAndMortyStore } from '~/store/rick-and-morty'
 
 /**
@@ -14,7 +14,7 @@ export default async (): Promise<{
   const route = useRoute()
   const store = useRickAndMortyStore()
 
-  const page = computed<number>(() => Number.parseInt(route.query.page as string || defaultPageNumber.toString(), 10))
+  const page = computed<number>(() => validatePageQueryParam(route.query.page as string))
 
   const { data, error, status } = await useRickAndMortyData<Info<Character[]>>('character', {
     key: () => `character-page-${page.value}`,
