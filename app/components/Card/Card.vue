@@ -7,7 +7,7 @@
       <slot name="content" />
     </div>
     <template #footer>
-      <slot name="footer" />
+      <slot name="actions" />
     </template>
   </UCard>
 </template>
