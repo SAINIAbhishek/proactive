@@ -59,6 +59,9 @@ importers:
       pinia:
         specifier: ^2.3.0
         version: 2.3.0(typescript@5.7.3)(vue@3.5.13(typescript@5.7.3))
+      pokeapi-types:
+        specifier: ^0.0.2
+        version: 0.0.2
       rickmortyapi:
         specifier: ^2.3.0
         version: 2.3.0
@@ -4735,6 +4738,9 @@ packages:
   pluralize@8.0.0:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
     engines: {node: '>=4'}
+
+  pokeapi-types@0.0.2:
+    resolution: {integrity: sha512-yg/ZMEILjBiF6Af1lGXfSXYi5WEUUlFi6tDKxKmW6lOvdYsp1H3oNL++rKq/32Zsp6MgOig4Xltz9txYnryFpw==}
 
   portfinder@1.0.32:
     resolution: {integrity: sha512-on2ZJVVDXRADWE6jnQaX0ioEylzgBpQk8r55NE4wjXW1ZxO+BgDlY6DXwj20i0V8eB4SenDQ00WEaxfiIQPcxg==}
@@ -12534,6 +12540,8 @@ snapshots:
       pathe: 2.0.1
 
   pluralize@8.0.0: {}
+
+  pokeapi-types@0.0.2: {}
 
   portfinder@1.0.32:
     dependencies:
