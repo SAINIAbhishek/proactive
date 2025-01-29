@@ -83,6 +83,7 @@ export default defineNuxtConfig({
     public: {
       pokemonApiUrl: process.env.NUXT_POKEMON_API_URL || 'https://pokeapi.co/api/v2',
       rickAndMortyApiUrl: process.env.NUXT_RICK_AND_MORTY_API_URL || 'https://rickandmortyapi.com/api',
+      viewModeKey: process.env.NUXT_PUBLIC_VIEW_MODE_KEY || 'grid',
     },
   },
 })
