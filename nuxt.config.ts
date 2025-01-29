@@ -1,3 +1,4 @@
+import process from 'node:process'
 import { pwa } from './app/config/pwa'
 import { appDescription } from './app/constants/index'
 
@@ -75,6 +76,13 @@ export default defineNuxtConfig({
       rickAndMorty: {
         url: 'https://rickandmortyapi.com/api',
       },
+    },
+  },
+
+  runtimeConfig: {
+    public: {
+      pokemonApiUrl: process.env.NUXT_POKEMON_API_URL || 'https://pokeapi.co/api/v2',
+      rickAndMortyApiUrl: process.env.NUXT_RICK_AND_MORTY_API_URL || 'https://rickandmortyapi.com/api',
     },
   },
 })
