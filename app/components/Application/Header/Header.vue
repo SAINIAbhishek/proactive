@@ -6,14 +6,8 @@
           <li>
             <ApplicationHeaderLink to="/" label="Home" />
           </li>
-          <li>
-            <ApplicationHeaderLink to="/assignment" label="Read the assignment instructions" />
-          </li>
         </ul>
       </nav>
-      <div class="ml-auto">
-        <UButton to="https://github.com/spend-cloud-tom/front-end-boilerplate" icon="mdi:github" color="blue" label="GitHub repository" variant="outline" />
-      </div>
     </UContainer>
   </header>
 </template>
