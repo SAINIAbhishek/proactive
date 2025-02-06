@@ -1,3 +1,8 @@
+<script setup lang="ts">
+</script>
+
 <template>
-  <p>Rick and morty page</p>
+  <UContainer>
+    <ViewMode />
+  </UContainer>
 </template>

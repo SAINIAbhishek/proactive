@@ -1,3 +1,8 @@
+<script setup lang="ts">
+</script>
+
 <template>
-  <p>Pokemon page</p>
+  <UContainer>
+    <ViewMode />
+  </UContainer>
 </template>
